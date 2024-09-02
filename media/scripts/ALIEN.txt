@@ -1,0 +1,143 @@
+module Base {
+	  
+		imports
+		{
+				Base
+		}
+
+		item	Alien {
+		DisplayName                 	=	Alien Pistol,
+		Icon                        		=	Alien,	
+		WeaponSprite                	=	Alien,	
+		Type                      	  	=	Weapon,	
+		SubCategory                 	=	Firearm,
+		Tags			=	StrikerFired,
+		Ranged                      	=	TRUE,	
+		IsAimedFirearm              	=	TRUE,	
+		WeaponReloadType            	=	handgun,
+		FireMode                    	=	Single,	
+		AttachmentType              	=	Holster,	
+		UseEndurance                	=	FALSE,
+		/* ============ PERFORMANCE DATA ============= */
+		MinRange                    	=	0.61	,
+		MaxRange                    	=	14	,
+		AimingPerkRangeModifier     	=	1.4	,
+		MinDamage                   	=	1	,
+		MaxDamage                   	=	1.4	,
+		CriticalChance              	=	15	,
+		CritDmgMultiplier            	=	4,	
+		AimingPerkCritModifier      	=	10,	
+		HitChance                   	=	25	,
+		ToHitModifier               	=	1.5,	
+		AimingPerkHitChanceModifier 	=	13	,
+		MinAngle                     	=	0.915	,
+		AimingPerkMinAngleModifier  	=	0.005	,
+		ConditionMax                	=	60	,
+		ConditionLowerChanceOneIn   	=	57	,
+		MultipleHitConditionAffected	=	FALSE,	
+		JamGunChance                	=	0.07	,
+		AimingTime                  	=	12	,
+		ReloadTime                  	=	30,	
+		SwingTime                   	=	0.3	,
+		MinimumSwingTime            	=	0.3	,
+		SwingAmountBeforeImpact     	=	0,	
+		RecoilDelay                 	=	25	,
+		Weight                      	=	1.4	,
+		OAL			=	0.5	,
+		/* ============ ANIMATION & SOUND ============ */
+		RunAnim                     	=	Run_Weapon2,	
+		SwingAnim                   	=	Handgun,	
+		MetalValue                  	=	30,	
+		SoundVolume                 	=	40,	
+		SoundRadius                 	=	40,	
+		SoundGain                   	=	1.5,	
+		NPCSoundBoost               	=	1.5,	
+		BringToBearSound		=	M9BringToBear,
+		SwingSound      		=	M9Shoot,
+		HitSound            		=	BulletHitBody,
+		ClickSound         		=	M9Jam,
+		BreakSound       		=	M9Break,
+		EquipSound       		=	M9Equip,
+		UnequipSound     		=	M9UnEquip,
+		InsertAmmoSound  		=	M9InsertAmmo,
+		EjectAmmoSound  		=	M9EjectAmmo,
+		InsertAmmoStartSound	=	M9InsertAmmoStart,
+		InsertAmmoStopSound	=	M9InsertAmmoStop,
+		EjectAmmoStartSound	=	M9EjectAmmoStart,
+		EjectAmmoStopSound	=	M9EjectAmmoStop,
+		ShellFallSound    		=	M9CartridgeFall,
+		RackSound        		=	M9Rack,
+		ImpactSound           	 	=	null,	
+		/* ============= AMMUNITION DATA ============= */
+		AmmoType                    	=	Base.Bullets9mm,	
+		AmmoBox                     	=	Bullets9mmBox,	
+		MaxAmmo                     	=	22,	
+		MagazineType                	=	Base.9mmClip,	
+		ProjectileCount             	=	1,	
+		MaxHitCount                 	=	1,	
+		ShareDamage                 	=	FALSE,	
+		SplatSize                   	=	3,	
+		SplatNumber                 	=	3,	
+		SplatBloodOnNoDeath         	=	TRUE,	
+		PushBackMod                 	=	0.3,	
+		KnockBackOnNoDeath          	=	TRUE,	
+		KnockdownMod                	=	2,	
+		DoorDamage        						= 5
+
+		/* =========== ATTACHMENT DATA ============ */	
+		MagazineType 									= 		Base.9mmClip,
+    		ModelWeaponPart		= RedDot RedDot reddot reddot,
+    		ModelWeaponPart 		= GunLight GunLight gunlight gunlight,
+   		 ModelWeaponPart 	= IronSight IronSight scope scope,
+    		ModelWeaponPart 	= Laser Laser laser laser,
+    		AttachmentType 		= Holster,
+	}
+
+	model Alien
+		{
+			mesh = weapons/firearm/Alien,
+			texture = weapons/firearm/Alien,
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment scope
+			{
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment scope2
+			{
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment recoilpad
+			{
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment reddot
+			{
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment laser
+			{
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment world
+			{
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+	}
+}
