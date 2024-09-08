@@ -44,6 +44,7 @@ module Base {
 		RecoilDelay                 	=	25	,
 		Weight                      	=	1.4	,
 		OAL			=	0.5	,
+		StopPower = 6,
 		/* ============ ANIMATION & SOUND ============ */
 		RunAnim                     	=	Run_Weapon2,	
 		SwingAnim                   	=	Handgun,	
@@ -71,7 +72,7 @@ module Base {
 		/* ============= AMMUNITION DATA ============= */
 		AmmoType                    	=	Base.Bullets9mm,	
 		AmmoBox                     	=	Bullets9mmBox,	
-		MaxAmmo                     	=	22,	
+		MaxAmmo                     	=	17,	
 		MagazineType                	=	Base.9mmClip,	
 		ProjectileCount             	=	1,	
 		MaxHitCount                 	=	1,	
